@@ -23,8 +23,8 @@ class InterpolatorTest extends FeatureSpec with Matchers {
     }
     scenario ("Testing custom url string interpolation") {
       import com.inaccurate.playground.URLHelper._
-      val worldString = "https://inaccuratethoughts.com/"
-      url"get$worldString" shouldNot be(empty)
+      val address = "https://inaccuratethoughts.com/"
+      url"get$address" shouldNot be(empty)
     }
   }
 
